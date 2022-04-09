@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/contact.php" method="POST" enctype="multipart/form-data" id="contact-form">
+        <p>Contact Form</p>
+        <div class="field">
+            <label for="name" class="required">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter name here" required>
+        </div>
+        <div class="field">
+            <label for="email" class="required">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter email here" required>
+        </div>
+        <div class="field">
+            <label for="phone" class="required">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="Enter phone here" required>
+        </div>
+        <div class="field">
+            <label for="date" class="required">Date</label>
+            <input id="date" name="date" type="date" required>
+        </div>
+        <div class="field">
+            <label for="url">Website URL</label>
+            <input id="url" name="url" type="url" placeholder="Enter URL here">
+        </div>
+        <div class="services-input">
+            <p>How can I assist you?(Multiple choices are allowed)</p>
+            <br>
+            <div>
+                <input type="checkbox" name="design" id="design" value="web development">
+                <label for="design">Web Design/Development</label>
+            </div>
+            <div>
+                <input type="checkbox" name="consult" id="consult" value="web consultation">
+                <label for="consult">Web Consultation</label>
+            </div>
+            <div>
+                <input type="checkbox" name="seo" id="seo" value="seo">
+                <label for="seo">Website Optimization</label>
+            </div>
+            <div>
+                <input type="checkbox" name="data" id="data" value="data analysis">
+                <label for="data">Data Analysis/Visualization</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="reset" value="reset" form="contact-form">RESET</button>
+            <button type="submit" value="submit" form="contact-form" >SUBMIT</button>
+        </div>
+    </form>
+    <!-- <script src="/main.js"></script> -->
+</body>
+</html>
